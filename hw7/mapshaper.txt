@@ -1,0 +1,9 @@
+string-fields=Geo_FIPS
+
+proj albersusa
+points
+join pop_18_poverty keys=GEOID,Geo_FIPS
+style r=Math.sqrt(pop_18_in_poverty/300) fill=orange
+
+proj albersusa
+style fill=light-grey stroke=#000
